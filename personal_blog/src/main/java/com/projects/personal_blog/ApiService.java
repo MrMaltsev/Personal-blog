@@ -16,4 +16,13 @@ public class ApiService {
     public List<Article> getAllArticles() {
         return articleRepository.findAll();
     }
+
+    public Article getArticle(Long id) {
+        return articleRepository.findById(id)
+                .orElseThrow(() -> new ArticleNotFoundException(id));
+    }
+
+    public Article saveNewArticle(Article newArticle) {
+        return articleRepository.save(newArticle);
+    }
 }
