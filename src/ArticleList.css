@@ -1,0 +1,64 @@
+/* src/ArticleList.css */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.article-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article-item {
+  margin-bottom: 15px;
+  padding: 12px 20px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.article-item:hover {
+  background-color: #e6f2ff;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-post-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #357ab8;
+}
+
+.article-description {
+  color: #555;
+  font-size: 16px;
+  margin-top: 4px;
+}
