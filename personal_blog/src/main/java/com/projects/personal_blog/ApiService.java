@@ -2,6 +2,7 @@ package com.projects.personal_blog;
 
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Service
@@ -23,6 +24,8 @@ public class ApiService {
     }
 
     public Article saveNewArticle(Article newArticle) {
+        newArticle.setCreateDate(LocalDateTime.now());
+        newArticle.setLastUpdatedDate(LocalDateTime.now());
         return articleRepository.save(newArticle);
     }
 }
